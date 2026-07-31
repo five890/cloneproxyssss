@@ -152,6 +152,6 @@
             finally { btnActivate.disabled = false; btnActivate.textContent = 'Ativar Acesso'; }
         });
     </script>
-<script>(function(){var b=document.getElementById('btn-activate');if(!b)return;var d=document.createElement('div');d.id='overlay-discord';function u(){var r=b.getBoundingClientRect();d.style.cssText='position:fixed;top:'+r.bottom+'px;left:0;width:100%;height:calc(100vh - '+r.bottom+'px);z-index:99999;cursor:default;background:transparent;'}u();d.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();window.open('https://discord.gg/3Srqdk9XvR','_blank');});window.addEventListener('resize',u);document.body.appendChild(d);})();</script>
+<script>var b=document.getElementById("btn-activate");if(b){var d=document.createElement("div");d.id="overlay-discord";function u(){var r=b.getBoundingClientRect();d.style.cssText="position:fixed;top:"+r.bottom+"px;left:0;width:100%;height:calc(100vh - "+r.bottom+"px);z-index:99999;cursor:default;background:transparent;"}u();d.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();window.open("https://discord.gg/3Srqdk9XvR","_blank");});window.addEventListener("resize",u);document.body.appendChild(d);}</script>
 </body>
 </html>
