@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/proxy-api/:path*",
-      "destination": "https://freefireproxy.com.br/api/:path*"
-    }
-  ]
-}
