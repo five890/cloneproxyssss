@@ -109,7 +109,7 @@
         const proxyInfo = document.getElementById('proxy-info');
         async function fetchIp() {
             try {
-                const response = await fetch('https://freefireproxy.com.br/api/get-ip');
+                const response = await fetch('/api/get-ip');
                 const data = await response.json();
                 userIpInput.value = data.ip;
             } catch (error) { userIpInput.value = ''; }
@@ -125,7 +125,7 @@
             resultContainer.classList.add('hidden');
             proxyInfo.classList.add('hidden');
             try {
-                const response = await fetch('https://freefireproxy.com.br/api/validate-key', {
+                const response = await fetch('/api/validate-key', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ key, manual_ip: ip })
